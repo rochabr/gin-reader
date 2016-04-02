@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5B3877C91CAF62B6009F80F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3877C81CAF62B6009F80F2 /* AppDelegate.swift */; };
-		5B3877CB1CAF62B6009F80F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3877CA1CAF62B6009F80F2 /* ViewController.swift */; };
 		5B3877CE1CAF62B6009F80F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3877CC1CAF62B6009F80F2 /* Main.storyboard */; };
 		5B3877D01CAF62B6009F80F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3877CF1CAF62B6009F80F2 /* Assets.xcassets */; };
 		5B3877D31CAF62B6009F80F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3877D11CAF62B6009F80F2 /* LaunchScreen.storyboard */; };
 		5B3877DE1CAF62B6009F80F2 /* gin_readerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3877DD1CAF62B6009F80F2 /* gin_readerTests.swift */; };
+		5B3877EA1CAF6493009F80F2 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3877E91CAF6493009F80F2 /* TesseractOCR.framework */; };
+		5B3877EC1CAF64E3009F80F2 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 5B3877EB1CAF64E3009F80F2 /* tessdata */; };
+		5B3877EE1CAF6517009F80F2 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3877ED1CAF6517009F80F2 /* libstdc++.6.0.9.tbd */; };
+		5B3877F01CAF6526009F80F2 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3877EF1CAF6526009F80F2 /* CoreImage.framework */; };
+		5B3877F71CAF6647009F80F2 /* GinCapturerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3877F61CAF6647009F80F2 /* GinCapturerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,6 @@
 /* Begin PBXFileReference section */
 		5B3877C51CAF62B6009F80F2 /* gin-reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gin-reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3877C81CAF62B6009F80F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B3877CA1CAF62B6009F80F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B3877CD1CAF62B6009F80F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B3877CF1CAF62B6009F80F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B3877D21CAF62B6009F80F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,12 @@
 		5B3877D91CAF62B6009F80F2 /* gin-readerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gin-readerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3877DD1CAF62B6009F80F2 /* gin_readerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gin_readerTests.swift; sourceTree = "<group>"; };
 		5B3877DF1CAF62B6009F80F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B3877E91CAF6493009F80F2 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		5B3877EB1CAF64E3009F80F2 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		5B3877ED1CAF6517009F80F2 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		5B3877EF1CAF6526009F80F2 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		5B3877F21CAF65DD009F80F2 /* gin-reader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gin-reader-Bridging-Header.h"; sourceTree = "<group>"; };
+		5B3877F61CAF6647009F80F2 /* GinCapturerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GinCapturerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3877F01CAF6526009F80F2 /* CoreImage.framework in Frameworks */,
+				5B3877EE1CAF6517009F80F2 /* libstdc++.6.0.9.tbd in Frameworks */,
+				5B3877EA1CAF6493009F80F2 /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,11 +90,13 @@
 			isa = PBXGroup;
 			children = (
 				5B3877C81CAF62B6009F80F2 /* AppDelegate.swift */,
-				5B3877CA1CAF62B6009F80F2 /* ViewController.swift */,
 				5B3877CC1CAF62B6009F80F2 /* Main.storyboard */,
 				5B3877CF1CAF62B6009F80F2 /* Assets.xcassets */,
 				5B3877D11CAF62B6009F80F2 /* LaunchScreen.storyboard */,
 				5B3877D41CAF62B6009F80F2 /* Info.plist */,
+				5B3877F11CAF652A009F80F2 /* Frameworks */,
+				5B3877F21CAF65DD009F80F2 /* gin-reader-Bridging-Header.h */,
+				5B3877F61CAF6647009F80F2 /* GinCapturerViewController.swift */,
 			);
 			path = "gin-reader";
 			sourceTree = "<group>";
@@ -94,6 +108,27 @@
 				5B3877DF1CAF62B6009F80F2 /* Info.plist */,
 			);
 			path = "gin-readerTests";
+			sourceTree = "<group>";
+		};
+		5B3877E81CAF647B009F80F2 /* Tesseract */ = {
+			isa = PBXGroup;
+			children = (
+				5B3877EB1CAF64E3009F80F2 /* tessdata */,
+				5B3877E91CAF6493009F80F2 /* TesseractOCR.framework */,
+			);
+			name = Tesseract;
+			path = "gin-reader";
+			sourceTree = "<group>";
+		};
+		5B3877F11CAF652A009F80F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B3877EF1CAF6526009F80F2 /* CoreImage.framework */,
+				5B3877ED1CAF6517009F80F2 /* libstdc++.6.0.9.tbd */,
+				5B3877E81CAF647B009F80F2 /* Tesseract */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B3877D31CAF62B6009F80F2 /* LaunchScreen.storyboard in Resources */,
+				5B3877EC1CAF64E3009F80F2 /* tessdata in Resources */,
 				5B3877D01CAF62B6009F80F2 /* Assets.xcassets in Resources */,
 				5B3877CE1CAF62B6009F80F2 /* Main.storyboard in Resources */,
 			);
@@ -197,8 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B3877CB1CAF62B6009F80F2 /* ViewController.swift in Sources */,
 				5B3877C91CAF62B6009F80F2 /* AppDelegate.swift in Sources */,
+				5B3877F71CAF6647009F80F2 /* GinCapturerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +363,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/gin-reader",
+				);
 				INFOPLIST_FILE = "gin-reader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fernandorocha.gin-reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gin-reader/gin-reader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -338,10 +383,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/gin-reader",
+				);
 				INFOPLIST_FILE = "gin-reader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fernandorocha.gin-reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gin-reader/gin-reader-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -388,6 +441,7 @@
 				5B3877E41CAF62B6009F80F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B3877E51CAF62B6009F80F2 /* Build configuration list for PBXNativeTarget "gin-readerTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +450,7 @@
 				5B3877E71CAF62B6009F80F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
