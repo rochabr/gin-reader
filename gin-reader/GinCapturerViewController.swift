@@ -83,7 +83,7 @@ class GinCapturerViewController: UIViewController, UINavigationControllerDelegat
         let tesseract = G8Tesseract()
         
         tesseract.language = "eng"
-        tesseract.engineMode = .TesseractCubeCombined
+        tesseract.engineMode = .TesseractOnly
        
         tesseract.pageSegmentationMode = .Auto
         tesseract.maximumRecognitionTime = 60.0
