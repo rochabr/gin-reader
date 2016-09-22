@@ -90,8 +90,18 @@ class GinCapturerViewController: UIViewController, UINavigationControllerDelegat
 
         tesseract.image = image.g8_blackAndWhite()
         tesseract.recognize()
+        
+        
+        let gin = self.captureGin(tesseract.recognizedText)
+        let ginNumber: Int? = Int(gin)
+        if ginNumber != nil {
+            employeesArray.addObject(gin)
+            table.reloadData()
+        }
+        else {
+            print("Not Valid Integer \(gin)")
+        }
 
-        employeesArray.addObject(self.captureGin(tesseract.recognizedText))
         table.reloadData()
 
         removeActivityIndicator()
